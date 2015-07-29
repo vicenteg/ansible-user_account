@@ -1,0 +1,12 @@
+---
+# defaults file for mapr_accounts
+
+user:
+group:
+home:
+
+# Password generated with openssl passwd -1
+password_hash:
+
+uid:
+gid:

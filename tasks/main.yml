@@ -1,0 +1,8 @@
+---
+# tasks file for user_account
+
+- name: create a group (if defined)
+  group: name={{group}} gid="{{gid}}"
+
+- name: set a password for the mapr user and ensure ssh keys exist
+  user: name={{user}} uid="{{uid}}" group="{{group}}" password="{{password_hash}}" home="{{home}}" generate_ssh_key=yes state=present createhome=yes
